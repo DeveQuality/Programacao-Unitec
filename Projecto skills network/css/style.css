@@ -1,0 +1,269 @@
+/* Variaveis css - sistema de design */
+:root{
+    /* cores principais */
+    --cor-primaria:#0f62fe;
+    --cor-primaria-escura:#0043ce;
+    --cor-texto:#161616;
+    --cor-texto-secundario:#525252;
+    --cor-fundo:#ffffff;
+    --cor-fundo-alt:#f4f4f4;
+    --cor-bordas:#e0e0e0;
+    --cor-white:#ffffff;
+
+    /* tamanho da fonte */
+    --font-family:'IBM Plex sans' , sans-serif;
+    --font-size-xs: 0.75rem;
+    --font-size-sm:0.875rem;
+    --font-size-base:1rem;
+    --font-size-lg:1.125rem;
+    --font-size-xl:1.25rem;
+    --font-size-2xl:1.5rem;
+    --font-size-3xl:2rem;
+    --font-size-4xl:2.5rem;
+    --font-size-5xl:3rem;
+
+    /* Espacamentos */
+    --sapacing-xs:0.5rem;
+    --sapacing-sm:1rem;
+    --sapacing-md:1.5rem;
+    --sapacing-lg:2rem;
+    --sapacing-xl:3rem;
+    --sapacing-2xl:4rem;
+    --sapacing-3xl:6rem;
+
+    /* Layouts */
+    --max-width:1200px;
+    --border-radius:4px;
+
+    /* Sombras */
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
+    --shadow-md: 0 4px 12px rgba(0,0,0,0.12);
+    --shadow-lg: 0 8px 24px rgba(0,0,0,0.15);
+
+    /* transicoes */
+    --transition-fast:150ms ease;
+    --transition-base:250ms ease;
+}
+
+/* resentando os estilos padrao dos navegadores */
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    color: var(--cor-texto);
+    background-color: var(--cor-fundo);
+    line-height: 1.6;
+    -webkit-font-smoothing:antialiased;  /* melhora a renderizacao das fontes */
+}
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;  
+}
+ul,ol{
+    list-style: none;
+}
+
+
+/* agora vamos usar as classes que colocamos no css */
+
+.container{
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--sapacing-lg);
+}
+.btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    font-size: var(--font-size-base);
+    font-family: var(--font-family);
+    font-weight: 600;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color var(--transition-fast) , transform var(--transition-fast );
+    text-decoration: none;
+}
+.btn:hover{
+    transform: translateY(-1px);
+}
+.btn-primary{
+    background-color: var(--cor-primaria);
+    color: var(--cor-white);
+}
+.btn-primary:hover{
+    background-color: var(--cor-primaria-escura);
+}
+.btn-secondary{
+    background-color: transparent;
+    color: var(--cor-primaria);
+    border: 2px solid var(--cor-primaria);
+}
+.btn-secondary:hover{
+    background-color: var(--cor-primaria);
+    color: var(--cor-white);
+}
+.section-title{
+    font-size: var(--font-size-3xl);
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--cor-texto);
+}
+.section-text{
+    font-size: var(--font-size-lg);
+    color: var(--cor-texto-secundario);
+    line-height: 1.7;
+}
+
+
+/*  estilizando o nav bar */
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: var(--cor-white);
+    border-bottom: 1px solid var(--cor-bordas);
+    height: 64px;
+    transition: box-shadow var(--transition-base);
+}
+
+
+/* sombra ao rolara a pagina */
+
+.navbar.scrolled{
+    box-shadow: var(--sapacing-md);
+}
+.navbar__inner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 64px;
+}
+.navbar__logo svg{
+    display: block;
+}
+.navbar__links{
+    display: flex;
+    align-items: center;
+    gap: var(--sapacing-lg);
+}
+.navbar__link{
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    color: var(--cor-texto-secundario);
+    transition: color var(--transition-fast);
+    padding: 0.25rem 0;
+    position: relative;
+}
+
+/* animacoao nos links ao passar o mouse */
+
+.navbar__link::after{
+    content: '';
+    position: relative;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    transition: width var(--transition-base);
+}
+.navbar__link:hover{
+    color: var(--cor-primaria);
+}
+.navbar__link:hover::after{
+    width: 100%;
+}
+
+/* botao hamburguer para mobile */
+
+.navbar__hamburger{
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+}
+.navbar__hamburger span{
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: var(--cor-texto);
+    transition: all var(--transition-base);
+    border-radius: 2px;
+}
+
+/* animacoes para o hamburger para x quando aberto  */
+
+.navbar__hamburger.active span:nth-child(1){
+    transform: translateY(7px) rotate(45deg);
+}
+
+.navbar__hamburger.active span:nth-child(2){
+    opacity: 0;
+    transform: scaleX(0);
+}
+
+.navbar__hamburger.active span:nth-child(3){
+    transform: translate(-7px) rotate(-45deg);
+}
+
+/* Resposividade para mobile  */
+
+@media (max-with: 768px){
+    .navbar__links {
+        position: fixed;
+        top: 64px;
+        left: 0;
+        right: 0;
+        background-color: var(--cor-white);
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        padding: var(--sapacing-sm);
+        border-bottom: 1px solid var(--cor-bordas);
+        box-shadow: var(--shadow-md);
+        /* Escondido por padrao */
+        transform: translateY(-100%);
+        opacity: 0;
+        pointer-events: none;
+        transition: transform var(--transition-base) , opacity var(--transition-base);
+    }
+    .navbar__links.open{
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: all;
+    }
+    .navbar__link{
+        padding: var(--sapacing-sm) var(--sapacing-sm);
+        width: 100%;
+        border-radius: var(--border-radius);
+    }
+    .nav__actions{
+        display: none;   /* Esconder o botao no mobile , aparece no menu */
+    }
+    .navbar__hamburger{
+        display: flex;   /* mostra o hamburguer no mobile */
+    }
+    
+}
