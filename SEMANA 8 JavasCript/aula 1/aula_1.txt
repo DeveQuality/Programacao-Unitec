@@ -5,3 +5,4 @@ JAVASCRPT
 * ao inserir o js interno temos q colocar no  fechamento do body <script></script>
 * ao inserir o js externo temos q criar um arquivo script.js e colocar na abertura da tag de abertura <script></script>
     exemplo: <script src="script.js"></script>
+
