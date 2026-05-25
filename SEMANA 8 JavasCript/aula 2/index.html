@@ -8,7 +8,7 @@
 <body>
     <div class="container">
 
-        <div class="ver_mais">
+        <div id="ver_mais">
             <p>Aqui vai o primeiro texto</p>
 
             <button id="btn_ver_mais" onclick="VerMais()">
@@ -16,27 +16,29 @@
             </button>
         </div>
 
-        <div class="ver_menos">
+        <div id="ver_menos">
             <p>Aqui vai o segundo texto</p>
 
             <button id="btn_ver_menos" onclick="VerMenos()">
                 ver menos
             </button>
         </div>
+        <div id="res">
+            aqui
+        </div>
     </div>
 
     <script>
-        const verMenos=document.getElementById("ver_menos");
-        const verMais =document.getElementById("Ver_mais");
+        const verMenos=document.getElementById("ver_menos")
+        const verMais =document.getElementById("Ver_mais")
 
         function VerMenos(){
-            verMenos.style.display="none";
-            verMais.style.display="block";
+            
         }
         
         function VerMais(){
-            verMenos.style.display="block";
-            verMais.style.display="none";
+            verMenos.style.display="block"
+            verMais.style.display="block"
         }
     </script>
 </body>
