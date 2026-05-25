@@ -1,0 +1,15 @@
+/* Variaveis css - sistema de design */
+:root{
+    /* cores principais */
+    --cor-primaria:#0f62fe;
+    --cor-primaria-escura:#0043ce;
+    --cor-texto:#161616;
+    --cor-texto-secundario:#525252;
+    --cor-fundo:#ffffff;
+    --cor-fundo-alt:#f4f4f4;
+    --cor-bordas:#e0e0e0;
+
+    /* tamanho da fonte */
+    --font-family:'IBM Plex sans' , sans-serif;
+
+}
