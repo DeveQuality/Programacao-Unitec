@@ -12,5 +12,136 @@
 
     /* tamanho da fonte */
     --font-family:'IBM Plex sans' , sans-serif;
+    --font-size-xs: 0.75rem;
+    --font-size-sm:0.875rem;
+    --font-size-base:1rem;
+    --font-size-lg:1.125rem;
+    --font-size-xl:1.25rem;
+    --font-size-2xl:1.5rem;
+    --font-size-3xl:2rem;
+    --font-size-4xl:2.5rem;
+    --font-size-5xl:3rem;
 
+    /* Espacamentos */
+    --sapacing-xs:0.5rem;
+    --sapacing-sm:1rem;
+    --sapacing-md:1.5rem;
+    --sapacing-lg:2rem;
+    --sapacing-xl:3rem;
+    --sapacing-2xl:4rem;
+    --sapacing-3xl:6rem;
+
+    /* Layouts */
+    --max-width:1200px;
+    --border-radius:4px;
+
+    /* Sombras */
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
+    --shadow-md: 0 4px 12px rgba(0,0,0,0.12);
+    --shadow-lg: 0 8px 24px rgba(0,0,0,0.15);
+
+    /* transicoes */
+    --transition-fast:150ms ease;
+    --transition-base:250ms ease;
+}
+
+/* resentando os estilos padrao dos navegadores */
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    color: var(--cor-texto);
+    background-color: var(--cor-fundo);
+    line-height: 1.6;
+    -webkit-font-smoothing:antialiased;  /* melhora a renderizacao das fontes */
+}
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;  
+}
+ul,ol{
+    list-style: none;
+}
+
+
+/* agora vamos usar as classes que colocamos no css */
+
+.container{
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--sapacing-lg);
+}
+.btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    font-size: var(--font-size-base);
+    font-family: var(--font-family);
+    font-weight: 600;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color var(--transition-fast) , transform var(--transition-fast );
+    text-decoration: none;
+}
+.btn:hover{
+    transform: translateY(-1px);
+}
+.btn-primary{
+    background-color: var(--cor-primaria);
+    color: var(--cor-white);
+}
+.btn-primary:hover{
+    background-color: var(--cor-primaria-escura);
+}
+.btn-secondary{
+    background-color: transparent;
+    color: var(--cor-primaria);
+    border: 2px solid var(--cor-primaria);
+}
+.btn-secondary:hover{
+    background-color: var(--cor-primaria);
+    color: var(--cor-white);
+}
+.section-title{
+    font-size: var(--font-size-3xl);
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--cor-texto);
+}
+.section-text{
+    font-size: var(--font-size-lg);
+    color: var(--cor-texto-secundario);
+    line-height: 1.7;
+}
+
+
+/*  estilizando o nav bar */
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: var(--cor-white);
+    border-bottom: 1px solid var(--cor-bordas);
+    height: 64px;
+    transition: box-shadow var(--transition-base);
 }

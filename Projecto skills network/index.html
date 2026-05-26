@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skills Network</title>
 
-
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
     <link rel="stylesheet"  href="css/style.css">
 
@@ -13,7 +16,41 @@
 <body>
     <!-- navbar -->
     <header id="navbar">
-        <p>será preenchido no Passo 3 </p>
+        <nav class="navbar">
+            <div class="container navbar__inner">
+                <!-- aqui vai a logo -->
+                <a href="/" class="navbar__logo" aria-label="Skills Network - Home">
+                    <svg width="180" height="40" viewBox="0 0 180 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="36" height="36" x="2" y="2" rx="4" fill="#0f62fe"/>
+                    <text x="9" y="24" font-family="IBM Plex Sans" font-size="16" font-weight="700" fill="white">SN</
+                    text>
+                    <text x="46" y="26" font-family="IBM Plex Sans" font-size="16" font-weight="600" 
+                    fill="#161616">Skills Network</text>
+                    </svg>
+                </a>
+
+                <!-- Links de navegacao -->
+                <ul class="navbar__links" id="navLinks">
+                    <li><a href="#creators" class="navbar__link"> Criadores</a></li>
+                    <li><a href="#enterprise" class="navbar__link">Empresas</a></li>
+                    <li><a href="#education" class="navbar__link">Educação</a></li>
+                    <li><a href="#features" class="navbar__link">Soluções</a></li>
+                </ul>
+
+                <!-- criacao de um botao de accao par desktop -->
+                <div class="navbar__actions">
+                    <a href="#cta" class="btn btn-primary">fale conosco</a>
+                </div>
+
+                <!-- botao hamburguer para mobile -->
+                <button class="nav__hamburger" id="hamburguerBtn" aria-label="Abrir menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button> 
+
+            </div>
+        </nav>
     </header>
 
     <!-- conteudo principal -->
