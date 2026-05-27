@@ -229,3 +229,41 @@ ul,ol{
 }
 
 /* Resposividade para mobile  */
+
+@media (max-with: 768px){
+    .navbar__links {
+        position: fixed;
+        top: 64px;
+        left: 0;
+        right: 0;
+        background-color: var(--cor-white);
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        padding: var(--sapacing-sm);
+        border-bottom: 1px solid var(--cor-bordas);
+        box-shadow: var(--shadow-md);
+        /* Escondido por padrao */
+        transform: translateY(-100%);
+        opacity: 0;
+        pointer-events: none;
+        transition: transform var(--transition-base) , opacity var(--transition-base);
+    }
+    .navbar__links.open{
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: all;
+    }
+    .navbar__link{
+        padding: var(--sapacing-sm) var(--sapacing-sm);
+        width: 100%;
+        border-radius: var(--border-radius);
+    }
+    .nav__actions{
+        display: none;   /* Esconder o botao no mobile , aparece no menu */
+    }
+    .navbar__hamburger{
+        display: flex;   /* mostra o hamburguer no mobile */
+    }
+    
+}
