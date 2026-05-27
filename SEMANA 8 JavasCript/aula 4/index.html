@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .formulario{
+            border: 1px solid rgb(72, 72, 245);
+            box-shadow: 2px 2px 2px blue;
+            width: 500px;
+
+            display: flex;
+            justify-content: center;
+            margin-left: 30%;
+            margin-top: 15%;
+            border-radius: 20px;
+
+        }
+        form{
+            padding: 30px;
+        }
+        span{
+            font-size: 20px;
+
+        }
+        input{
+            padding: 10px;
+            margin: 10px;
+            border: none;
+            border-radius: 10px;
+            background-color: rgba(108, 108, 241, 0.272);
+        }
+        button{
+            cursor: pointer;
+            padding: 10px;
+            border: none;
+            background-color: rgba(72, 72, 225, 0.466);
+            border-radius: 10px;
+        }
+        button:hover{
+            transition: 0.2s ease;
+            transform: skewY(-4deg);
+            background-color: rgb(200, 202, 209);
+            color: blue;
+            border: 0.5px solid blue;
+        }
+        h1{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="formulario">
+        <form action="">
+            <h1>Indice de massa corporal</h1>
+            <span>peso</span> <input type="number" name="" id="peso" placeholder="digite o seu peso"> kg<br>
+            <span>altura </span><input type="number" name="" id="altura" placeholder="digite a sua altura"> m<br>
+            <button onclick="calcular()">
+                calcular
+            </button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
