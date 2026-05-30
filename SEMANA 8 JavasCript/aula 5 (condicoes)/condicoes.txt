@@ -1,0 +1,13 @@
+* condicoes 
+-sao estruturas de dicisoes
+
+* sintaxe
+    if(condicao){
+        instrucao
+    }
+
+* valores booleanos
+    onde:
+    0 => false
+    1 => true
+
