@@ -1,0 +1,66 @@
+.pagina{
+    display: grid;
+    grid-template-columns: 220px 1fr ;
+    grid-template-rows: auto auto 1fr auto;
+    gap: 20px;
+    min-height: 100vh;
+
+    grid-template-areas:
+    'header header'
+    'nav nav'
+    'aside main'
+    'footer footer'
+    ;
+}
+
+header{
+    background-color: rgba(0, 0, 250, 0.6);
+    grid-area: header;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 2px 4px  rgb(253, 141, 4);
+}
+nav{
+    background-color: rgba(132, 0, 255, 0.637);
+    grid-area: nav;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 2px 4px  rgb(253, 141, 4);
+}
+aside{
+    background-color: rgba(255, 144, 9, 0.655);
+    grid-area: aside;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 2px 4px  rgb(253, 141, 4);
+}
+main{
+    background-color: rgba(255, 19, 19, 0.708);
+    grid-area: main;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 2px 4px  rgb(253, 141, 4);
+}
+footer{
+    background-color: rgba(255, 255, 0, 0.594);
+    grid-area: footer;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 2px 4px  rgb(44, 44, 5);
+}
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(aut0-fill,minmax(250px,1fr));
+    gap: 16px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.galeria img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.galeria .destaque{
+    grid-column: span 2;
+}

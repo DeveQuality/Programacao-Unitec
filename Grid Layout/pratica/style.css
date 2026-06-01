@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.pagina{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    gap: 16px;
+    
+    grid-template-areas:
+    'header header'
+    'nav nav'
+    'aside main'
+    'footer footer'
+    ;
+}
+header{
+    background-color: blue;
+    grid-area: header;
+}
+nav{
+    background-color: blueviolet;
+    grid-area: nav;
+}
+aside{
+    background-color: bisque;
+    grid-area: aside;
+}
+main{
+    background-color: brown;
+    grid-area: main;
+}
+footer{
+    background-color: yellow;
+    grid-area: footer;
+}
