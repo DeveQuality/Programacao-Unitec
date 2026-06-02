@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>condicoes(if)</title>
+    <style>
+        input{
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1> Apredendo as Condicoes (if)</h1>
+
+    <p>mudara de cor</p>
+
+    <input 
+        type="number" 
+        id="txt_valor" 
+        placeholder="digite um valor"
+        onchange="mudaDecor()"
+    >
+
+    <script>
+
+        function mudaDecor(){
+
+            const Txt_valor = document.getElementById('txt_valor')
+            let valor = Txt_valor.value
+
+            if(valor<10){
+
+                Txt_valor.style.color='red'
+                Txt_valor.style.fontWeight='bold'
+
+            }else{
+                Txt_valor.style.color='blue'
+            }
+        }
+
+    </script>
+
+</body>
+</html>

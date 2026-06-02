@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Case</title>
+    <style>
+        input{
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Aprendendo o Switch Case</h1>
+
+    <p>Campo</p>
+    <input 
+        type="number" 
+        name="" 
+        id="semana"
+        placeholder="Digite um valor"
+    >
+    
+
+    <script>
+        const txt_value=document.getElementById('semana')
+        let valor=txt_value.value
+
+        switch(valor){
+
+            case 1 : alert('Domingo');
+            break
+
+            case 2 : alert('Segunda');
+            break
+
+            case 3 : alert('Terca');
+            break
+
+            case 4 : alert('Quarta');
+            break
+
+            case 6 : alert('Quinta');
+            break
+
+            default : alert('o valor nao existe');
+        }
+            
+    </script>
+
+</body>
+</html>
