@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--fundo);
+    font-family: var(--font-family);
+    color: var(--color);
+    line-height: 1.5;
+    -webkit-font-smoothing:antialiased;
+}
+:root{
+    --fundo:black;
+    --color:white;
+    --font-family:'IBM Plex sans' , sans-serif;
+
+    --font-big-size:3em;
+    --font-normal-size:1.5em;
+    --font-perfect:1.1em;
+    --font-short-size:1em;
+
+    --hover-color:rgb(46, 46, 255);
+
+    --transition-fast:150ms ease;
+    --transition-base:250ms ease;
+
+}
+
+#header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+}
+
+.logo{
+    font-size: var(--font-normal-size);
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {  
+    0%, 100% { transform: translateY(0px); }  
+    50%       { transform: translateY(-12px); } 
+}
+
+
+.submenu{
+    display: flex;
+    align-items: center;
+}
+
+li{
+    list-style: none;
+    margin:10px ;
+    padding: 10px;
+}
+a{
+    font-size: var(--font-perfect);
+    color: var(--color);
+    text-decoration: none;
+
+    transition: var(--transition-base);
+}
+a:hover{
+    color: var(--hover-color);
+}
+
+#container{
+    display: flex;   
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap column;
+
+    margin: 10px;
+    height: 85vh;
+    padding: 10px;
+    width: 50%;
+    border: 1px solid yellow;
+}
+.content{
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+    width: 600px;
+}
+.text{
+    font-size: var(--font-normal-size);
+}
+.text_1{
+    font-size: var(--font-big-size);
+}
+.text_2{
+    font-size: var(--font-short-size);
+}
+.button{
+    width: 130px;
+    padding: 15px;
+    margin: 10px;
+    border: none;
+    border-radius: 9px;
+    font-size: var(--font-short-size);
+    font-weight: bold;
+}
+
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 50%;
+    height:85vh;
+    border: 1px solid red;
+}
