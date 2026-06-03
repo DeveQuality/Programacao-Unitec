@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+        section{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div{
+            text-align: center;
+            border: 2px solid blue;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px;
+            width: 300px;
+        }
+        #resultado{
+            border: 1px solid blue;
+            margin: 10px;
+        }
+        button{
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div>
+            <h1>calculadora</h1>
+            <p>Num 1</p><br>
+
+            <input type="number"  id="num1">
+            <p>Num 2</p><br>
+            <input type="number"  id="num2"> <br>
+
+            <button onclick="calcular('+')">+</button>
+            <button onclick="calcular('-')">-</button>
+            <button onclick="calcular('/')">/</button>
+            <button onclick="calcular('*')">*</button>
+
+
+            
+
+            <div id="resultado">
+                <p>resultado</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="javascript.js"></script>
+    
+</body>
+</html>
