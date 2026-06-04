@@ -76,10 +76,35 @@ footer{
         flex-direction: row;
     }
     .nav-links a{
-    color: white;
-    text-decoration: none;
+        color: white;
+        text-decoration: none;
     }
     .galeria{
+        grid-template-columns: repeat(2,1fr);   /* ponto a ser repisado */
+
+    }
+}
+
+/* agora para desktop */
+@media(min-width:1024px){
+
+    .pagina{
         grid-template-columns: 220px 1fr 200px;
+        grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "main main aside"            /* duvida dessa parte */
+        "footer footer footer"
+        ;
+    }
+
+    aside{
+        background-color: teal;
+        display: block;
+        border-radius: 10px;
+        box-shadow: 5px 2px 4px  rgb(253, 141, 4);
+    }
+    .galeria{
+        grid-template-columns: repeat(3,1fr);
     }
 }
