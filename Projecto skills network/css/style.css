@@ -80,7 +80,7 @@ ul,ol{
 }
 
 
-/* agora vamos usar as classes que colocamos no css */
+/* agora vamos usar as classes que colocamos no html */
 
 .container{
     max-width: var(--max-width);
@@ -135,7 +135,7 @@ ul,ol{
 
 /*  estilizando o nav bar */
 .navbar{
-    position: fixed;
+    position:sticky;
     top: 0;
     left: 0;
     right: 0;
