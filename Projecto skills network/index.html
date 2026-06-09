@@ -73,7 +73,7 @@
                 </div>
 
                 <!-- Ilustração SVG decorativa --> 
-                <div class="hero_illustration" aria-hidden="true">
+                <div class="hero__illustration" aria-hidden="true">
                     <svg viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg" class="hero__svg">        <!-- Círculo de fundo -->        <circle cx="250" cy="200" r="180" fill="#EEF4FF" />        <!-- Ícones simulados -->        <rect x="140" y="120" width="80" height="80" rx="12" fill="#0f62fe" opacity="0.9"/>        <rect x="240" y="100" width="80" height="80" rx="12" fill="#4589ff" opacity="0.8"/>        <rect x="280" y="190" width="80" height="80" rx="12" fill="#0043ce" opacity="0.85"/>        <rect x="160" y="210" width="80" height="80" rx="12" fill="#669fff" opacity="0.7"/>        <!-- Texto nos quadrados -->        <text x="165" y="168" font-family="IBM Plex Mono" font-size="22" fill="white" font-weight="bold">&lt;/ &gt;</text>        <text x="265" y="148" font-family="IBM Plex Sans" font-size="20" fill="white" font-weight="bold">AI</ text>        <text x="295" y="238" font-family="IBM Plex Sans" font-size="18" fill="white" font-weight="bold">DB</ text>        <text x="178" y="258" font-family="IBM Plex Sans" font-size="16" fill="white" font-weight="bold">☁</ text>      </svg>
                 </div>
 
@@ -96,7 +96,7 @@
                                 <div class="mockup-bar" style="width:70%"></div>
                                 <div class="mockup-bar" style="width:90%"></div>
                                 <div class="mockup-bar" style="width:55%"></div>
-                                <div class="mockup-bar mockup-bar--accent" style="width:80%"></div
+                                <div class="mockup-bar mockup-bar--accent" style="width:80%"></div>
                             </div>
                         </div>
                     </div>
@@ -118,11 +118,11 @@
                             </li>
 
                             <li class="feature-list__item">
-                                <span class="feature=list__icon">✓</span>
+                                <span class="feature-list__icon">✓</span>
                                 Ferramentas para criar laboratórios interativos 
                             </li>
                             <li class="feature-list__item">
-                                <span class="feature-list__item">✓</span>
+                                <span class="feature-list__icon">✓</span>
                                 Analytics detalhados sobre seus cursos
                             </li>
                         </ul>
@@ -202,9 +202,9 @@
                     <div class="split-section__media">
                         <div class="edu-card">
 
-                            <div class="edu-car__icon">🎓</div>
+                            <div class="edu-card__icon">🎓</div>
                             <h3 class="edu-card__title">Portal Educacional</h3>
-                            <p class="edu-car__text">Mantenha sua instituição à frente ensinando as tecnologias mais inovadoras do mercado</p>
+                            <p class="edu-card__text">Mantenha sua instituição à frente ensinando as tecnologias mais inovadoras do mercado</p>
 
                             <div class="edu-card__tags">
                                 <span class="tag">Python</span>
@@ -219,7 +219,7 @@
 
                     <div class="split-section__content">
                         <span class="badge">Para Educação</span>
-                        <h2 class="section_title">Para Instituições de Ensino </h2>
+                        <h2 class="section-title">Para Instituições de Ensino </h2>
                         <p class="section-title">
                             Acompanhar a tecnologia é difícil. Coloque sua instituição à frente ensinando as últimas tecnologias em tendência. Ajude seus alunos a construir carreiras — não apenas obter diplomas
                         </p>
@@ -230,7 +230,7 @@
         </section>
 
         <!-- Estatisticas -->
-        <section id="state">
+        <section id="stats">
             <div class="container">
                 <div class="stats-grid">
 
@@ -241,7 +241,7 @@
                     </div>
 
                     <div class="stat-card">
-                        <span class="stat-card__number" data-target="g">0</span>
+                        <span class="stat-card__number" data-target="9">0</span>
                         <span class="stat-card__suffix">M+</span>
                         <p class="stat-card__label">
                             Aprendizes matriculados em nossos cursos e projeto
@@ -249,7 +249,7 @@
                     </div>
 
                     <div class="stat-card">
-                        <span class="stat-card__number" data-target="9">0</span>
+                        <span class="stat-card__number" data-target="30">0</span>
                         <span class="stat-card__suffix">M+</span>
                         <p class="stat-card__label">Laboratórios iniciados por aprendizes anualmente</p>
                     </div>
@@ -260,17 +260,17 @@
         <!--features  -->
         <section id="features" style="background-color:var(--cor-fundo-alt);">
             <div class="container">
-                <div class="sectin-header">
+                <div class="section-header">
                     <h2 class="section-title">O que você pode esperar de nós</h2>
                     <p class="section-text" style="max-width: 580px; margin: 0 auto;">
                         Oferecemos uma solução completa para educadores, aprendizes e líderes da indústria construírem e desenvolverem habilidades.
                     </p>
                 </div>
                 <div class="features-grid">
-                    <div class="feature-grid">
-                        <div class="feature-grid__icon">🖥️</div>
-                        <h3 class="feature-grid__title">>LMS de Última Geraçã</h3>
-                        <p class="feature-grid__text">
+                    <div class="feature-card">
+                        <div class="feature-card__icon">🖥️</div>
+                        <h3 class="feature-card__title">>LMS de Última Geraçã</h3>
+                        <p class="feature-card__text">
                             Ao se cadastrar em um Portal, você recebe um Sistema de Gestão de Aprendizagem moderno, poderoso e completo operado por nós. 
                         </p>
                     </div>
@@ -311,7 +311,7 @@
                     <p class="cta-box__text">
                         Entre em contato com nossa equipe para descobrir como o Skills Network pode ajudar sua organização. 
                     </p>
-                    <div class="cta-box_-actions">
+                    <div class="cta-box__actions">
                         <a href="mailto:contato@skills.network" class="btn btn-primary" style="font-size: 1.1rem; padding: 1rem 2rem;">Fale Conosco</a>
                     </div>
                 </div>
@@ -321,7 +321,7 @@
     </main>
 
     <!-- Rodape -->
-    <footer id="rodape">
+    <footer id="footer">
         <div class="container">
             <div class="footer__grid">
                 <!-- para a acoluna 1 tera a logo e a descricao -->
@@ -333,17 +333,17 @@
                     </p>
 
                     <div class="footer__social">
-                        <a href="#" class="footer__social-link">F</a>
-                        <a href="#" class="footer__social-link">X</a>
-                        <a href="#" class="footer__social-link">in</a>
-                        <a href="#" class="footer__social-link">▶</a>
-                        <a href="#" class="footer__social-link">⌥</a>
+                        <a href="#" class="footer__social-link" aria-label="Facebook">F</a>
+                        <a href="#" class="footer__social-link" aria-label="Twiter">X</a>
+                        <a href="#" class="footer__social-link" aria-label="Linkedin">in</a>
+                        <a href="#" class="footer__social-link" aria-label="Youtube">▶</a>
+                        <a href="#" class="footer__social-link" aria-label="Github">⌥</a>
                     </div>
                 </div>
 
                 <!-- para coluna 2 tera os links -->
                 <div class="footer__links-group">
-                <h4 class="footer__links-title">Soluçõe</h4>
+                <h4 class="footer__links-title">Soluções</h4>
                 <ul class="footer__links-list">
                     <li><a href="#">Para Criadores</a></li>
                     <li><a href="#">Portais para Empresas</a></li>
@@ -366,9 +366,9 @@
                 <div class="footer__links-group">
                     <h4 class="footer__links-title">Contacto</h4>
                     <ul class="footer__links-list">
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="https://cognitiveclass.a">CognitiveClas</a></li>
+                        <li><a href="#">Fale Conosco</a></li>
+                        <li><a href="#">Suporte</a></li>
+                        <li><a href="https://cognitiveclass.ai">CognitiveClass</a></li>
                     </ul>
                 </div>
             </div>
