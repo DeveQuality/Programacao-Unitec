@@ -7,7 +7,11 @@ function Calcular(operador){
     
     switch(operador){
         case '+':
-            let adicionar=Num1+Num2
+
+            let NUM1=parseInt(Num1)         /* coverter a constante em number */
+            let NUM2=parseInt(Num2)         /* coverter a constante em number */
+
+            let adicionar=NUM1+NUM2
             lbl_res.innerHTML=` somando sera ` + adicionar;
             break;
 

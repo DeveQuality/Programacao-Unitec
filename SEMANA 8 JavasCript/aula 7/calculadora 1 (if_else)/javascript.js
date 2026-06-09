@@ -5,7 +5,10 @@ function Somar(){
 
     const lbl_res = document.getElementById('resultado')
 
-    let somar = Num1 + Num2
+    let NUM1=parseInt(Num1)
+    let NUM2=parseInt(Num2)
+
+    let somar = NUM1 + NUM2
 
     lbl_res.innerHTML=`a soma sera de :` + somar
 

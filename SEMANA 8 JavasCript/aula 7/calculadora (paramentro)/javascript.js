@@ -6,7 +6,11 @@ function calcular(operador){
     let lbl_res = document.getElementById('resultado')
 
     if(operador==='+'){
-        let res=Num1+Num2
+
+        let NUM1=parseInt(Num1)
+        let NUM2=parseInt(Num2)
+
+        let res=NUM1+NUM2
         lbl_res.innerHTML=`O resultado sera:` + res
 
     }else if(operador==='-'){

@@ -8,8 +8,8 @@
         *{
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        h1{
-            background: linear-gradient(to right,rgba(0, 0, 255, 0.546),rgba(0, 128, 0, 0.084));
+        .titulo{
+            background: linear-gradient(to right,rgb(0, 255, 8),rgba(0, 128, 0, 0.084));
             border-radius: 10px;
         }
         section{            /* como centralizar uma div */
@@ -21,16 +21,16 @@
         }
         .calculadora{
             text-align: center;
-            border: 2px solid blue;
-            box-shadow: 2px 5px 2px rgb(57, 57, 221);
+            border: 2px solid rgb(0, 255, 8);
+            box-shadow: 2px 5px 2px rgb(0, 255, 8);
             border-radius: 10px;
             padding: 10px;
             margin: 10px;
             width: 300px;
         }
         .campo{
-            border: 1px solid blue;
-            box-shadow: 0px 2px 2px rgb(57, 57, 221);
+            border: 1px solid rgb(0, 255, 8);
+            box-shadow: 0px 2px 2px rgb(0, 255, 8);
             height: 7vh;
             margin: 10px;
             border-radius: 10px;
@@ -44,10 +44,10 @@
             cursor: pointer;
             border: none;
             border-radius: 5px;
-            box-shadow:2px 2px 2px 2px rgb(57, 57, 221);
+            box-shadow:2px 2px 2px 2px rgb(0, 255, 8);
         }
         button:hover{
-            background-color: blue;
+            background-color: rgb(0, 255, 8);
             transition: 0.5s ease;
             transform: scale(1.09) translateY(-5px);
             color: white;
@@ -55,7 +55,7 @@
         }
         input{
             border: none;
-            background-color: rgb(178, 201, 247);
+            background-color: rgb(0, 255, 8);
             padding: 7px;
             border-radius: 7px;
         }
@@ -63,8 +63,10 @@
 </head>
 <body>
     <section>
+        <h3>calculadora usando as funcoes (somar,subtrair,divisao,multiplicacao)</h3>
+
         <div class="calculadora">
-            <h1>calculadora</h1>
+            <h1 class="titulo">calculadora</h1>
             <hr>
 
             <p>Num 1</p>
