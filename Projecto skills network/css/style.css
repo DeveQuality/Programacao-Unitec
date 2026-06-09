@@ -389,7 +389,6 @@ ul,ol{
     display: flex;  
     flex-direction: column;  
     gap: var(--spacing-md); 
-    margin-left: 60px;
 }
 
 /* Aqui teremos um badge -etiqueta colorida */
