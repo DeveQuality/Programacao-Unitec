@@ -1,46 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ler Mais e Ler Menos</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            background-color: red;
+        }
+
+        .caixa {
+            width: 400px;
+            padding: 15px;
+            margin-bottom: 15px;
+            border: 1px solid #333;
+            border-radius: 8px;
+        }
+
+        #div2 {
+            display: none;
+        }
+
+        button {
+            padding: 8px 15px;
+            cursor: pointer;
+        }
+    </style>
 </head>
+
 <body>
-    <div class="container">
 
-        <div id="ver_mais">
-            <p>Aqui vai o primeiro texto</p>
+    <!-- Primeira div -->
+    <div class="caixa" id="div1">
+        <h2>Texto principal</h2>
 
-            <button id="btn_ver_mais" onclick="VerMais()">
-                ver mais
-            </button>
-        </div>
+        <p>
+            Este é o primeiro parágrafo. 
+            Ele contém a informação inicial apresentada ao utilizador.  Este é o segundo bloco ...
+            
+        </p>
 
-        <div id="ver_menos">
-            <p>Aqui vai o segundo texto</p>
 
-            <button id="btn_ver_menos" onclick="VerMenos()">
-                ver menos
-            </button>
-        </div>
-        <div id="res">
-            aqui
-        </div>
+
+        <button onclick="lerMenos()">
+            Ler menos
+        </button>
     </div>
 
-    <script>
-        const verMenos=document.getElementById("ver_menos")
-        const verMais =document.getElementById("Ver_mais")
 
-        function VerMenos(){
-            verMenos.style.display="none"
-            verMais.style.display="block"
+    <!-- Segunda div -->
+    <div class="caixa" id="div2">
+        <h2>Texto principal</h2>
+
+        <p>
+            Este é o primeiro parágrafo. 
+            Ele contém a informação inicial apresentada ao utilizador.
+            Este é o segundo bloco de texto que aparece quando o utilizador deseja ler mais.
+        </p>
+
+        <p>
+            Aqui podem existir mais detalhes, explicações ou informações complementares.
+        </p>
+
+        <button onclick="lerMais()">
+            Ler mais
+        </button>
+    </div>
+
+
+    <script>
+
+        function lerMenos() {
+            document.getElementById("div1").style.display = "none";
+            document.getElementById("div2").style.display = "block";
         }
-        
-        function VerMais(){
-            verMenos.style.display="block"
-            verMais.style.display="none"
+
+
+        function lerMais() {
+            document.getElementById("div2").style.display = "none";
+            document.getElementById("div1").style.display = "block";
         }
+
     </script>
+
 </body>
 </html>
