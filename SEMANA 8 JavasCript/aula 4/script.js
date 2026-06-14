@@ -4,6 +4,6 @@ function calcular(){
 
     const IMC  =   Peso/(Altura*Altura)
 
-    console.log(IMC)
+    alert(IMC)
 
 }
