@@ -4,12 +4,12 @@ function somar(){
 
     let convertido_1 = parseInt(CAMPO_1)
 
+    for(b=1;b<=10;b++){
 
-    for( const cont = 1 ; cont<=12 ; cont++) {
+        let SOMAR = convertido_1 + b
 
-        const somar = convertido_1 + cont
- 
-        console.log( somar)
+        
+        console.log(CAMPO_1 + '+' + b `=` + SOMAR)
     }
 }
 
