@@ -15,7 +15,7 @@ body{
     --color:white;
     --font-family:'IBM Plex sans' , sans-serif;
 
-    --font-big-size:2em;
+    --font-big-size:3em;
     --font-normal-size:1.5em;
     --font-perfect:1.1em;
     --font-short-size:1em;
@@ -72,14 +72,47 @@ a:hover{
 
 .info{
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-flow: wrap column;
 
     margin: 10px;
+    height: 85vh;
     padding: 10px;
     width: 50%;
-
+    border: 1px solid yellow;
+}
+.content{
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+    width: 600px;
+}
+.text{
+    font-size: var(--font-normal-size);
+}
+.text_1{
+    font-size: var(--font-big-size);
+}
+.text_2{
+    font-size: var(--font-short-size);
+}
+.button{
+    width: 130px;
+    padding: 15px;
+    margin: 10px;
+    border: none;
+    border-radius: 9px;
+    font-size: var(--font-short-size);
+    font-weight: bold;
 }
 
 .img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     width: 50%;
+    height:85vh;
+    border: 1px solid red;
 }
