@@ -20,31 +20,35 @@
         name="" 
         id="semana"
         placeholder="Digite um valor"
+        onfocus="DiaDaSemana()"
     >
     
 
     <script>
-        const txt_value=document.getElementById('semana')
-        let valor=txt_value.value
+        function DiaDaSemana(){
 
-        switch(valor){
+            const txt_value=document.getElementById('semana')
+            let valor=txt_value.value
 
-            case 1 : alert('Domingo');
-            break
+            switch(valor){
 
-            case 2 : alert('Segunda');
-            break
+                case 1 : alert('Domingo');
+                break
 
-            case 3 : alert('Terca');
-            break
+                case 2 : alert('Segunda');
+                break
 
-            case 4 : alert('Quarta');
-            break
+                case 3 : alert('Terca');
+                break
 
-            case 6 : alert('Quinta');
-            break
+                case 4 : alert('Quarta');
+                break
 
-            default : alert('o valor nao existe');
+                case 6 : alert('Quinta');
+                break
+
+                default : alert('o valor nao existe');
+            }
         }
             
     </script>
