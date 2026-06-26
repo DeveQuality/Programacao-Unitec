@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change_bg</title>
+    <style>
+        *{
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        button{
+            cursor: pointer;
+            padding: 10px;
+            border: none;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        .dark{
+            background-color: grey;
+            color: white;
+            border-radius: 1px solid  white;
+        }
+        .white{
+            border: 1px solid gray;
+        }
+    </style>
+</head>
+<body id="bg_dark" class="bg_white">
+
+    <h1>changing background color to dark mode</h1>
+
+    <button class="dark" onclick="ChangeDark()">
+        dark mode
+    </button>
+
+
+    <button class="white" onclick="ChangeWhite()">
+        white mode
+    </button>
+
+
+    <script src="mind.js"></script>
+
+</body>
+</html>
