@@ -102,6 +102,9 @@ a{
     color: var(--Dark-grayish-blue);
     text-decoration: none;
 }
+a:hover{
+    color:var(--Very-dark-blue);
+}
 picture>img{
     width: 100%;
     background-size: cover;
