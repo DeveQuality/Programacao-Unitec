@@ -7,7 +7,7 @@
     --Off-white: hsl(36, 100%, 99%);
     --Grayish-blue: hsl(233, 8%, 79%);
     --Dark-grayish-blue: hsl(236, 13%, 42%);
-    --Very-dark-blue:-hsl(240, 100%, 5%);
+    --Very-dark-blue:hsl(240, 100%, 5%);
 
     /* font size (paragrafo) */
     --Font-size-paragraph: 15px;
@@ -57,17 +57,16 @@ header{
 section{
     padding: 20px;
     grid-area: section;
-    background-color: yellowgreen;
 }
 aside{
+    line-height: 29px;
     padding: 20px;
     grid-area: aside;
-    background-color: violet;
+    background-color: var(--Very-dark-blue);
 }
 article{
     padding: 20px;
     grid-area: article;
-    background-color: tomato;
 }
 picture{
     grid-area: picture;
@@ -111,6 +110,58 @@ header>h1{
     font-size: 49px;
     font-weight: var(--weights_3);
 }
+
+section>p{
+    color: var(--Dark-grayish-blue);
+    font-weight: var(--Weights_1);
+}
+section>button{
+    margin-top: 20px;
+    width: 140px;
+    padding: 15px;
+    letter-spacing: 2px;
+    border: none;
+    font-weight: var(--weights_2);
+    background-color: var(--Soft-red);
+    cursor: pointer;
+}
+aside>h1{
+    font-size: 35px;
+    color: var(--Soft-orange);
+}
+aside>h2{
+    margin-top: 70px;
+    font-weight: var(--weights_2);
+    color: var(--Off-white);
+}
+aside>p{
+    color: var(--Dark-grayish-blue);
+    margin-bottom: 19px;
+}
+
+#artigos{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.pequenas_img{
+    gap: 20px;
+    display: flex;
+}
+.texto>h2{
+    line-height: 1.5;
+    color: var(--Soft-red);
+    margin-bottom: 10px;
+}
+.texto>p{
+    line-height: 1.5;
+    margin-top: 10px;
+}
+.imagens>img{
+    width: 100px;
+}
+
+
 
 
 /* footer */
