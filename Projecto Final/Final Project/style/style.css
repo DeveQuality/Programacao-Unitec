@@ -117,22 +117,32 @@ section>p{
 }
 section>button{
     margin-top: 20px;
-    width: 140px;
-    padding: 15px;
+    width: 160px;
+    padding: 10px;
     letter-spacing: 2px;
     border: none;
     font-weight: var(--weights_2);
     background-color: var(--Soft-red);
     cursor: pointer;
 }
+section>button:hover{
+    transition: 0.9s ease;
+    background-color: var(--Very-dark-blue);
+    color: var(--Off-white);
+}
 aside>h1{
     font-size: 35px;
     color: var(--Soft-orange);
 }
 aside>h2{
+    cursor: pointer;
+    transition: 0.5s ease;
     margin-top: 70px;
     font-weight: var(--weights_2);
     color: var(--Off-white);
+}
+aside>h2:hover{
+    color: var(--Soft-orange);
 }
 aside>p{
     color: var(--Dark-grayish-blue);
