@@ -1,0 +1,118 @@
+:root{
+    /* cores primarias */
+    --Soft-orange: hsl(35, 77%, 62%);
+    --Soft-red: hsl(5, 85%, 63%);
+
+    /* cores nutras */
+    --Off-white: hsl(36, 100%, 99%);
+    --Grayish-blue: hsl(233, 8%, 79%);
+    --Dark-grayish-blue: hsl(236, 13%, 42%);
+    --Very-dark-blue:-hsl(240, 100%, 5%);
+
+    /* font size (paragrafo) */
+    --Font-size-paragraph: 15px;
+
+    /* font family */
+    --Family:Inter;
+    --Weights_1: 400;
+    --weights_2: 700; 
+    --weights_3: 800;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: var(--Family);
+}
+
+/* Grid layout */
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto 1fr;
+
+    
+    grid-template-areas:
+    'nav nav nav'
+    'picture picture aside'
+    'header section aside'
+    'article article article'
+    ;
+
+    max-width: 1440px;
+    margin: auto;
+    gap: 20px;
+}
+nav{
+    height: 100px;
+    grid-area: nav;
+}
+
+header{
+    padding: 20px;
+    grid-area: header;
+
+}
+section{
+    padding: 20px;
+    grid-area: section;
+    background-color: yellowgreen;
+}
+aside{
+    padding: 20px;
+    grid-area: aside;
+    background-color: violet;
+}
+article{
+    padding: 20px;
+    grid-area: article;
+    background-color: tomato;
+}
+picture{
+    grid-area: picture;
+}
+
+
+/* Estiliando os elementos */
+
+p{
+    font-size: var(--Font-size-paragraph);
+}
+
+.logo>img{
+    display: block;
+    margin-top: 30px;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+}
+
+li{
+    margin: 10px;
+    list-style: none;
+}
+
+a{
+    color: var(--Dark-grayish-blue);
+    text-decoration: none;
+}
+picture>img{
+    width: 100%;
+    background-size: cover;
+}
+header>h1{
+    font-size: 49px;
+    font-weight: var(--weights_3);
+}
+
+
+/* footer */
+.attribution { font-size: 0.6875rem; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
