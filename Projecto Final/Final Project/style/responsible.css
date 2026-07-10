@@ -1,5 +1,5 @@
 /* Mobile first */
-@media(max-width:375px){
+@media(max-width:460px){
 
     picture{
         background:url(../assets/images/image-web-3-mobile.jpg);
@@ -7,14 +7,24 @@
         width: 100%;
         
     }
-    .nav{
+    nav>ul{
         display: none;
     }
+    
     #artigos{
         flex-direction: column;
         gap: 40px;
     }
 
+    .logo>img{
+        width: 40px;
+    }
+    .hanburguer{
+        cursor: pointer;
+        width: 39px;
+        display: block;
+        margin-top: 30px;
+    }
     main{
         display: grid;
         grid-template-columns: auto;
@@ -33,5 +43,6 @@
         max-width: 350px;
         margin: auto;
         gap: 20px;
+        padding: 0px;
     }
 }

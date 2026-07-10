@@ -44,12 +44,16 @@ main{
     max-width: 1440px;
     margin: auto;
     gap: 20px;
+    padding: 20px;
 }
+
 nav{
     height: 100px;
     grid-area: nav;
 }
-
+.hanburguer{
+    display: none;
+}
 header{
     padding: 20px;
     grid-area: header;
