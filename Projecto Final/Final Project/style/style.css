@@ -23,6 +23,7 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: var(--Family);
+    
 }
 
 /* Grid layout */
@@ -105,7 +106,9 @@ a{
 a:hover{
     color:var(--Very-dark-blue);
 }
-picture>img{
+picture{
+    background-image: url(../assets/images/image-web-3-desktop.jpg);
+    height: 330px;
     width: 100%;
     background-size: cover;
 }
@@ -115,6 +118,7 @@ header>h1{
 }
 
 section>p{
+    line-height: 1.5;
     color: var(--Dark-grayish-blue);
     font-weight: var(--Weights_1);
 }
@@ -140,7 +144,7 @@ aside>h1{
 aside>h2{
     cursor: pointer;
     transition: 0.5s ease;
-    margin-top: 70px;
+    margin-top: 30px;
     font-weight: var(--weights_2);
     color: var(--Off-white);
 }
@@ -158,11 +162,11 @@ aside>p{
     flex-direction: row;
 }
 .pequenas_img{
-    gap: 20px;
+    gap: 10px;
     display: flex;
 }
 .texto>h2{
-    line-height: 1.5;
+    
     color: var(--Soft-red);
     margin-bottom: 10px;
 }
