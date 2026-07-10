@@ -1,3 +1,24 @@
+:root{
+    /* cores primarias */
+    --Soft-orange: hsl(35, 77%, 62%);
+    --Soft-red: hsl(5, 85%, 63%);
+
+    /* cores nutras */
+    --Off-white: hsl(36, 100%, 99%);
+    --Grayish-blue: hsl(233, 8%, 79%);
+    --Dark-grayish-blue: hsl(236, 13%, 42%);
+    --Very-dark-blue:hsl(240, 100%, 5%);
+
+    /* font size (paragrafo) */
+    --Font-size-paragraph: 15px;
+
+    /* font family */
+    --Family:Inter;
+    --Weights_1: 400;
+    --weights_2: 700; 
+    --weights_3: 800;
+}
+
 /* Mobile first */
 @media(max-width:460px){
 
@@ -7,10 +28,33 @@
         width: 100%;
         
     }
-    nav>ul{
+
+    .navbar__link {
         display: none;
     }
-    
+
+    .navbar__link.open {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        height: 90vh;
+        top: 90px;
+        right: 0px;
+        width: 220px;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        z-index: 100;
+    }
+
+    .navbar__link.open li {
+        line-height:2;
+        margin: 10px 0;
+    }
+    .navbar__link.open a{
+        color: var(--Very-dark-blue);
+    }
     #artigos{
         flex-direction: column;
         gap: 40px;
@@ -24,6 +68,8 @@
         width: 39px;
         display: block;
         margin-top: 30px;
+        border: none;
+        background: transparent;
     }
     main{
         display: grid;

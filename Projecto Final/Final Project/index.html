@@ -10,7 +10,7 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <link rel="stylesheet" href="style/style.css">
-  <link rel="stylesheet" href="link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style/responsible.css">
@@ -19,19 +19,19 @@
 
   <main class="principal">
       <nav class="nav">
-        <div class="logo">
+        <div class="logo" id="ilogo" onclick="mudar()">
           <img src="assets/images/logo.svg" alt="logo">
         </div>
-        <ul>
+        <ul  class="navbar__link" id="navLinks">
           <li><a href="#">Home</a></li>
           <li><a href="#">New</a></li>
           <li><a href="#">Popular</a></li>
           <li><a href="#">Trending</a></li>
           <li><a href="#">Categories</a></li>
         </ul>
-        <div class="hanburguer">
+        <button class="hanburguer" id="hamburgerBtn" aria-expanded="false">
           <img src="assets/images/icon-menu.svg" alt="imghamburguer">
-        </div>
+        </button>
       </nav>
 
 
@@ -114,7 +114,7 @@
         Coded by <a href="#">Your Name Here</a>.
       </footer>
       
-
+      <script src="js/js.js"></script>
   </main>
 </body>
 </html>
