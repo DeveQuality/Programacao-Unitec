@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            text-align: center;
+        }
+    </style>
+</head>
+<body id="fundo" class="return">
+
+
+
+    <p>ola mundo</p>
+
+    <button onclick="recarregar()">
+        clique aqui
+    </button>
+    <button onclick="retornando()">
+        clique aqui
+    </button>
+
+
+    <script>
+
+        const recarregar = () =>{
+            const cor = document.getElementById('fundo')
+
+            cor.style.backgroundColor = 'blue'
+            cor.style.color='white'
+        };
+
+        const retornando = () =>{
+            const retornar = document.querySelector('body.return')
+
+            retornar.style.backgroundColor = 'black'
+            retornar.style.color='red'
+        };
+
+
+        /* function recarregar(){
+            alert('ola mundo')
+        } */
+    </script>
+</body>
+</html>
