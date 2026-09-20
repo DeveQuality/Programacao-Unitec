@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 html,body{
-    background-color: var(--fundo);
+    background-color:var(--fundo);
     font-family: var(--font-family);
     color: var(--color);
     -webkit-font-smoothing:antialiased;
@@ -46,7 +46,9 @@ html,body{
     50%       { transform: translateY(-12px); } 
 }
 
-
+p{
+    line-height: 1.6;
+}
 .submenu{
     display: flex;
     align-items: center;
@@ -165,6 +167,15 @@ img{
     border-radius: 50%;
     filter: blur(10px);
     opacity: 0.7;
+}
+.redes_socias{
+    display: flex;
+    gap: 20px;
+
+}
+a>img{
+    filter: invert(1);
+    width: 40px;
 }
 footer{
     display: flex;
