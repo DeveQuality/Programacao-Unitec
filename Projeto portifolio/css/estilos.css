@@ -32,6 +32,7 @@ html,body{
     justify-content: space-around;
     align-items: center;
     height: 10vh;
+    position: relative;
 }
 
 .logo{
@@ -39,6 +40,37 @@ html,body{
     animation: float 4s ease-in-out infinite;
     font-size: 40px;
     font-weight: 600;
+}
+
+.menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    margin: 5px 0;
+    border-radius: 2px;
+    background-color: var(--color);
+    transition: all 0.3s ease;
+}
+
+.menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
 }
 
 @keyframes float {  
@@ -68,6 +100,7 @@ a{
 }
 a:hover{
     color: var(--hover-color);
+    text-decoration: underline;
 }
 
 
@@ -170,12 +203,15 @@ img{
 }
 .redes_socias{
     display: flex;
-    gap: 20px;
+    gap: 30px;
 
 }
 a>img{
     filter: invert(1);
     width: 40px;
+}
+a:hover img{
+    filter:brightness(0) saturate(100%) invert(50%) sepia(99%) saturate(1935%) hue-rotate(202deg) brightness(96%) contrast(100%);
 }
 footer{
     display: flex;

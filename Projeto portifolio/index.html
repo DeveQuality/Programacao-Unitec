@@ -24,14 +24,20 @@
                 Meu Porti<span>folio</span>
             </div>
 
-            <div class="menu">
+            <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="menu" aria-label="Menu principal">
                 <ul class="submenu">
                     <li><a href="#">Inicio</a></li>
                     <li><a href="#">Formação</a></li>
                     <li><a href="#">Projetos</a></li>
                     <li><a href="#">Contato</a></li>
                 </ul>
-            </div>
+            </nav>
 
         </header>
 
@@ -73,6 +79,27 @@
         </footer>
 
     </main>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const menu = document.querySelector('.menu');
+
+        if (menuToggle && menu) {
+            menuToggle.addEventListener('click', () => {
+                const isOpen = menu.classList.toggle('open');
+                menuToggle.classList.toggle('active', isOpen);
+                menuToggle.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            menu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    menu.classList.remove('open');
+                    menuToggle.classList.remove('active');
+                    menuToggle.setAttribute('aria-expanded', 'false');
+                });
+            });
+        }
+    </script>
 
 </body>
 </html>

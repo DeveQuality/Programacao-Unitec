@@ -1,20 +1,146 @@
-/* @media (max-width:640px){
-    body{
-       background-color:orange; 
+@media (max-width: 1024px) {
+    main {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            'header'
+            'article'
+            'picture'
+            'footer';
     }
-    #container{
-    display: flex;
-    flex-wrap:wrap ;   
-}
-    
-}
-@media (min-width:640px){
-    body{
-       background-color:rgb(0, 255, 38); 
+
+    #header {
+        padding: 25px 20px 0;
+        height: auto;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .menu {
+        width: 100%;
+    }
+
+    .submenu {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .info {
+        padding: 40px 30px 10px;
+    }
+
+    .text_1 {
+        font-size: clamp(3rem, 7vw, 5rem);
     }
 }
-@media  (min-width:1024px){
-    body{
-       background-color:rgb(238, 0, 255); 
+
+@media (max-width: 768px) {
+    #header {
+        justify-content: space-between;
+        padding: 20px 20px 0;
+        flex-wrap: wrap;
     }
-} */
+
+    .logo {
+        font-size: 2rem;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: calc(100% + 8px);
+        left: 0;
+        background: rgba(0, 0, 0, 0.92);
+        border-radius: 12px;
+        padding: 15px 20px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    }
+
+    .menu.open {
+        display: block;
+    }
+
+    .submenu {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    li {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    a {
+        font-size: 0.95rem;
+    }
+
+    .text {
+        font-size: 1rem;
+    }
+
+    .text > span {
+        font-size: 1.6rem;
+    }
+
+    .text_2 {
+        font-size: 0.95rem;
+    }
+
+    .imagen {
+        max-width: 420px;
+        margin: 0 auto;
+    }
+
+    .redes_socias {
+        gap: 18px;
+    }
+
+    a > img {
+        width: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+    #header {
+        padding-top: 30px;
+    }
+
+    .submenu {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    li {
+        width: 100%;
+        text-align: center;
+        padding: 6px 0;
+    }
+
+    .info {
+        padding: 25px 20px 0;
+    }
+
+    .button {
+        width: 100%;
+        max-width: 180px;
+    }
+
+    .text_1 {
+        font-size: 2.5rem;
+    }
+
+    .text_2 {
+        font-size: 0.9rem;
+    }
+
+    .redes_socias {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+}
