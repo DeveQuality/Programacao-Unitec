@@ -213,7 +213,53 @@ a>img{
 a:hover img{
     filter:brightness(0) saturate(100%) invert(50%) sepia(99%) saturate(1935%) hue-rotate(202deg) brightness(96%) contrast(100%);
 }
+
+
+
+/* ESTILOS DO PROJECTO */
+.info{
+    display: flex;
+    flex-direction: column;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.cards_1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    width: 80vw;
+    background-color: red;
+    border-radius: 1px solid var(--hover-color);
+    padding: 10px;
+
+}
+.cards_2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    width: 80vw;
+    background-color: rgb(0, 140, 255);
+    padding: 10px;
+
+}
+
+.informacao{
+    background-color: rgb(182, 182, 10);
+}
+.imagen>img{
+    max-width: 400px;
+    display: block;
+}
+
 footer{
     display: flex;
     justify-content: flex-end;
 }
+
+
+
