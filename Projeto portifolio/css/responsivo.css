@@ -104,6 +104,7 @@
     a > img {
         width: 32px;
     }
+    
 }
 
 @media (max-width: 480px) {
@@ -143,4 +144,5 @@
         justify-content: flex-start;
         flex-wrap: wrap;
     }
+    
 }
