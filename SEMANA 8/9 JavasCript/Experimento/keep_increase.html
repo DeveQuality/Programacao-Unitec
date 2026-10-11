@@ -63,19 +63,24 @@
 
     <script>
         function acao(sinal){
+           
             const numero = document.getElementById('Number').value
             const Campo = document.getElementById('campo')
+            let convertido = parseInt(numero)
+
 
             switch(sinal){
 
                 case '+':
-                    let convertido = parseInt(numero)
+                
+                    /* for(){}*/
 
-                    const aumentar = convertido + 10
+                    let aumentar = (convertido += 10)
                     Campo.innerHTML=`resultado : `+ aumentar 
                     break;
 
                 case '-':
+                    
                     const diminuir = numero-10
                     Campo.innerHTML=`resultado : `+ diminuir 
                     break;
